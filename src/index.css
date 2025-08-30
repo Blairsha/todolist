@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer base {
+  :root {
+    --background: 240 20% 98%;
+    --foreground: 220 20% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 20% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 20% 15%;
+
+    --primary: 235 85% 65%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 235 85% 55%;
+
+    --secondary: 240 10% 96%;
+    --secondary-foreground: 220 20% 25%;
+
+    --muted: 240 10% 95%;
+    --muted-foreground: 220 10% 55%;
+
+    --accent: 235 20% 92%;
+    --accent-foreground: 235 85% 65%;
+
+    --success: 145 85% 47%;
+    --success-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222 25% 8%;
+    --foreground: 210 40% 95%;
+
+    --card: 222 20% 12%;
+    --card-foreground: 210 40% 95%;
+
+    --popover: 222 20% 12%;
+    --popover-foreground: 210 40% 95%;
+
+    --primary: 235 85% 65%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 235 85% 55%;
+
+    --secondary: 222 15% 18%;
+    --secondary-foreground: 210 40% 90%;
+
+    --muted: 222 15% 15%;
+    --muted-foreground: 215 15% 60%;
+
+    --accent: 222 15% 18%;
+    --accent-foreground: 235 85% 65%;
+
+    --success: 145 85% 47%;
+    --success-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 222 15% 20%;
+    --input: 222 15% 18%;
+    --ring: 235 85% 65%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 222 20% 10%;
+    --sidebar-foreground: 210 40% 90%;
+    --sidebar-primary: 235 85% 65%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 222 15% 18%;
+    --sidebar-accent-foreground: 210 40% 90%;
+    --sidebar-border: 222 15% 20%;
+    --sidebar-ring: 235 85% 65%;
+
+    /* Градиенты для темной темы */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(235 85% 45%));
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)), hsl(222 15% 14%));
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
